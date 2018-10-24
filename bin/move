@@ -7,6 +7,8 @@ puts "Welcome to Tic Tac Toe!"
 puts "What's your first move?"
 
 player_move = gets.strip
-input_to_index(player_move)
+player_move_index = input_to_index(player_move)
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+move(board, player_move_index)
